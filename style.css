@@ -471,9 +471,18 @@ footer > p {
 
 
 @media screen and (max-width: 500px){
-    #footer-cards1, #footer-cards2, #cards, #hero-section, nav{
+    #footer-cards1, #footer-cards2, #cards, #hero-section, nav, #accio-links, #hero-accio-stats-box{
         flex-direction: column;
         align-items: center;
+    }
+
+    #card-1, #card-2{
+        margin-top: 20px;
+        margin-inline: auto;
+    }
+
+    .accio-nav-bottom{
+        width: 100vw;
     }
 
     .fcard{
@@ -484,11 +493,12 @@ footer > p {
 
     #hero-accio-stats-box{
         margin: auto;
-        padding-inline: 0px;
     }
 
     #hero-section-right{
-        margin-top: 30px;
+        margin-top: 60px;
+        width: 80vw !important;
+        /* margin: auto; */
     }
 
     #hero-sec-left-row2{
@@ -504,14 +514,16 @@ footer > p {
         width: 100vw;
     }
 
-    #hero-sec-left{
-        width:100vw;
+    #hero-sec-left, #courses-section, #hiring-partners{
+        width:90vw;
+        margin-inline: auto;
     }
 
-    #hero-sec-left-row1 > h1{
-        font-size: 30px;
-        margin: auto;
-        width: 90%;
-        margin-top: 10px;
+    #hero-sec-left-row1 > h1, #hero-sec-left-row1 > p{
+        display: none;
+    }
+
+    #courses-section > p{
+       text-align: center;
     }
 }
